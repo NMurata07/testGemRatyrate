@@ -5,9 +5,25 @@
   <%= @car.name %>
 </p>
 
+<!-- default -->
 <p>
-  <%= rating_for @car, 'speed' %>
+  Speed : <%= rating_for @car, 'speed' %>
 </p>
+
+<!-- disableafterrate -->
+<!-- <p>
+  Speed : <%= rating_for @car, 'speed', disable_after_rate: false %>
+</p>  -->
+
+<!-- star -->
+<!-- <p>
+  Speed : <%= rating_for @car, 'speed', star: 10 %>
+</p> -->
+
+<!-- half-star -->
+<!-- <p>
+  Speed : <%= rating_for @car, 'speed', disable_after_rate: false, tar: 5, enable_half: true %>
+</p> -->
 
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>
